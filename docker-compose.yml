@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: visiontutor-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./knowledge_base:/knowledge_base:ro
+    depends_on:
+      - mongodb
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: visiontutor-frontend
+    ports:
+      - "4173:4173"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Optional: only needed if ENABLE_HISTORY=true
+  mongodb:
+    image: mongo:7
+    container_name: visiontutor-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

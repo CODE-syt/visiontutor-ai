@@ -1,0 +1,16 @@
+Artificial Neural Networks consist of layers of interconnected neurons, each
+computing a weighted sum of its inputs followed by a nonlinear activation
+function (ReLU, sigmoid, tanh, etc.). Training uses backpropagation to compute
+the gradient of a loss function with respect to every weight via the chain
+rule, followed by an optimizer step (e.g. stochastic gradient descent, Adam)
+that updates the weights to reduce the loss. Convolutional Neural Networks
+(CNNs) use learned convolutional filters to detect local spatial patterns
+(edges, textures, shapes) and are the backbone of most computer vision
+systems. Recurrent Neural Networks (RNNs) and their gated variants (LSTM,
+GRU) process sequential data by maintaining a hidden state across time steps,
+which helps them model temporal dependencies but can suffer from vanishing or
+exploding gradients on long sequences. The Transformer architecture replaces
+recurrence with a self-attention mechanism that lets every position in a
+sequence directly attend to every other position, enabling much better
+parallelization and long-range dependency modeling; it underlies most modern
+large language models and many vision-language models.

@@ -1,0 +1,14 @@
+A Confusion Matrix summarizes classification performance by cross-tabulating
+predicted labels against actual labels, yielding true positives, false
+positives, true negatives, and false negatives. From these, common metrics
+are derived: Accuracy = (TP+TN)/(TP+TN+FP+FN), Precision = TP/(TP+FP),
+Recall (Sensitivity) = TP/(TP+FN), and F1-score, the harmonic mean of
+precision and recall = 2*(Precision*Recall)/(Precision+Recall). Overfitting
+occurs when a model learns noise or idiosyncrasies of the training data and
+fails to generalize to unseen data, typically indicated by a large gap
+between training and validation performance; common remedies include
+regularization, more training data, simpler models, dropout, and early
+stopping. Underfitting occurs when a model is too simple to capture the
+underlying pattern in the data, indicated by poor performance on both
+training and validation sets, and is typically addressed by increasing model
+capacity or reducing regularization.

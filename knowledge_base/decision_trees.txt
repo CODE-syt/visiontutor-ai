@@ -1,0 +1,19 @@
+Decision Trees are supervised learning models used for both classification and
+regression. A decision tree splits the dataset repeatedly based on feature
+values, choosing the split that best separates the classes or reduces
+variance, using criteria such as Gini impurity, entropy (information gain),
+or mean squared error reduction. Each internal node represents a test on a
+feature, each branch represents the outcome of that test, and each leaf node
+represents a class label or predicted value. Decision trees are easy to
+interpret and require little data preprocessing, but they are prone to
+overfitting, especially with deep trees, and are sensitive to small changes
+in the training data (high variance). Ensemble methods such as Random Forest
+and Gradient Boosted Trees combine many decision trees to reduce this
+variance and improve generalization.
+
+Random Forest builds many decision trees on bootstrapped samples of the
+training data, each considering a random subset of features at every split,
+and aggregates their predictions by majority vote (classification) or
+averaging (regression). This reduces overfitting compared to a single deep
+tree while retaining much of its interpretability advantage through feature
+importance scores.

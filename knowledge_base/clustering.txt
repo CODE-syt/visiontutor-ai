@@ -1,0 +1,12 @@
+K-Means Clustering is an unsupervised learning algorithm that partitions data
+into k clusters by iteratively assigning each point to its nearest centroid
+and then recomputing centroids as the mean of assigned points, until
+convergence. It requires the number of clusters k to be specified in advance
+and is sensitive to initialization (commonly mitigated with k-means++) and to
+outliers. Hierarchical Clustering builds a tree (dendrogram) of nested
+clusters either by successively merging the closest clusters (agglomerative)
+or by splitting a single cluster (divisive), and does not require k to be
+chosen up front. Principal Component Analysis (PCA) is a dimensionality
+reduction technique, not a clustering method, but is frequently used before
+clustering to reduce noise and visualize high-dimensional data by projecting
+it onto the directions (principal components) of maximum variance.

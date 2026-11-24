@@ -1,0 +1,12 @@
+Linear Regression models the relationship between a dependent variable y and
+one or more independent variables X by fitting a linear equation:
+y = w1*x1 + w2*x2 + ... + wn*xn + b. Parameters are typically learned by
+minimizing the mean squared error (MSE) between predicted and actual values,
+using either the closed-form normal equation or iterative optimization such
+as gradient descent. Logistic Regression extends this idea to classification
+by passing the linear combination through a sigmoid function to produce a
+probability between 0 and 1, and is trained by minimizing binary cross-entropy
+loss (log loss). Key assumptions of linear regression include linearity,
+independence of errors, homoscedasticity, and limited multicollinearity among
+features. Regularization techniques such as L1 (Lasso) and L2 (Ridge) penalize
+large coefficients to reduce overfitting.
